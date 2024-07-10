@@ -1,0 +1,59 @@
+@font-face {
+    font-family:'Roboto';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}   
+.title{
+    font-size: 40px;    
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    color: #828282;
+    height: 87px;
+    align-items: center;
+    border-bottom: 1px solid #828282;
+}
+.banner{
+    margin-top: 40px;
+}
+.banner_title{
+        font-size: 50px;
+        width: 120px;
+}
+.banner_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.banner_top p{
+    width: 160px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.banner_lang{
+    rotate: 270deg;
+}
+
+.favorite-post { 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+   
+}

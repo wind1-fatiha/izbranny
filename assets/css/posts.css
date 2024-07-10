@@ -1,0 +1,22 @@
+.container-posts {}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.post h1 {
+    border-bottom: 1px solid gray;
+}
+
+
+.post span {
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+}

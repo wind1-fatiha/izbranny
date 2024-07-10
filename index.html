@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<script>
+    const login=JSON.parse(localStorage.getItem('login'))
+    if (!login) {
+        window.location.pathname='login.html'
+    }
+
+    new Promise((resolve, reject)=>{
+        const age=+prompt('Ваш возраст')
+        //pending
+        if(age<18){
+            reject('Вы слишком молоды')
+        }
+        else{
+            resolve('Добро пожаловать')
+        }
+    }).catch((err)=>{
+        //rejected
+        console.log(err);
+    }).then(()=>{
+        //
+        console.log('Сработал then');
+    })
+</script>
+<body>
+  <header class="container">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./post.html">Posts</a></li>
+            <li><a href="./conract.html">Contact</a></li>
+            <li><a href="./rick_and_morti.html">Rick & Morty</a></li>
+            <li>Home</li>
+        </ul>
+    </nav>
+</header>
+<div class="banner container">
+    <div class="banner_top">
+        <h1 class="banner_title">
+            Denis Novik
+        </h1>
+        <p>
+            UX | UI designer
+            24 years old, Minsk
+        </p>
+        <div class="banner_lang">
+            RU | <span>ENG</span>
+        </div>
+    </div>
+    <div class="banner_body">
+        <img src="./assets/image/Group 2.1.svg" alt="">
+    </div>
+</div>
+<div class="container">
+    <div class="title">Мой адресс</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506.27316920732216!2d72.80259377784567!3d40.519261304243365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaf51e4e11011%3A0x2dd3bbd34364f3e1!2zSVQt0LrRg9GA0YHRiyDQmtGD0YDRgdGLINC_0YDQvtCz0YDQsNC80LzQuNGA0L7QstCw0L3QuNGPINCe0YggR2Vla3M!5e0!3m2!1sru!2skg!4v1719580991987!5m2!1sru!2skg" width="940"style="border:0;margin:20px auto;display: block" height="450"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
